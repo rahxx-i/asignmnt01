@@ -1,0 +1,18 @@
+CREATE DATABASE supermarketDB;
+USE supermarketDB;
+
+CREATE TABLE shop_details (
+    ID INT PRIMARY KEY,
+    business_name VARCHAR(100) NOT NULL,
+    goods_name VARCHAR(100) NOT NULL,
+    selling_price DECIMAL(10,2) DEFAULT 10.00
+);
+
+INSERT INTO shop_details VALUES
+(401, 'royal traders', 'biscuits', 25.00),
+(402, 'smart corner', 'juice', 50.00),
+(403, 'golden mart', 'coffee', 180.00),
+(404, 'family store', 'detergent', 75.00);
+
+SELECT * FROM shop_details;
+DESC shop_details;
